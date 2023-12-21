@@ -1,7 +1,9 @@
+product.html
+
 <html>
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title> Software Development Company </title>
+        <title> Product Page </title>
         <style type="text/css">
             * {
                 margin: 0;
@@ -22,6 +24,13 @@
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
+            }
+            .bg-product {
+                border: 1px;
+                padding: 10px;
+                color: white;
+                background-color: #6fa1f8;
+                border-radius: 30px;
             }
             .logo {
                 color: #6fa1f8;
@@ -83,60 +92,37 @@
                 cursor: pointer;
                 border-radius: 30px;
             }
-            .content {
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%,-50%);
-                text-align: center;
+            .container {
+                background: transparent;
+                padding: 10px 5%;
+                padding-bottom: 100px;
             }
-            .text h2 {
+            .container .box-container {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+                gap: 20px;
+            }
+            .container .box-container .box {
                 color: white;
-                font-weight: 800;
-                font-size: 50px;
-                letter-spacing: 3px;
+                box-shadow: 0 5px 10px rgba(0,0,0,.2);
+                border-radius: 20px;
+                background: transparent;
+                border: 1px solid white;
+                padding: 20px 10px;
             }
-            .text p {
-                color: white;
-                text-transform: capitalize;
-                font-size: 15px;
-                margin-bottom: 30px;
-                word-spacing: 2px;
-                letter-spacing: 1px;
+            .container .box-container .box img {
+                height: 40px;
+                border-radius: 10px;
             }
-            .login {
-                margin: 0px 10px;
-                border: 2px solid #6fa1f8;
-                padding: 13px 35px;
-                letter-spacing: 1px;
-                color: white;
-                border-radius: 30px;
-                background-color: #6fa1f8;
-                text-decoration: none;
-            }
-            .login:hover {
-                border: 2px solid #6fa1f8;
+            .container .box-container .box h3 {
                 color: #6fa1f8;
-                background-color: white;
-                transition: 0.5s;
-                cursor: pointer;
-            } 
-            .signup {
-                margin: 0px 10px;
-                border: 2px solid #6fa1f8;
-                padding: 13px 35px;
-                letter-spacing: 1px;
-                color: white;
-                border-radius: 30px;
-                background-color: #6fa1f8;
-                text-decoration: none;
+                font-size: large;
+                padding: 10px 0;
             }
-            .signup:hover {
-                border: 2px solid #6fa1f8;
-                color: #6fa1f8;
-                background-color: white;
-                transition: 0.5s;
-                cursor: pointer;
+            .container .box-container .box p {
+                color: white;
+                font-size: small;
+                line-height: 1.5;
             }
             footer {
                 background-color: #6fa1f8;
@@ -151,7 +137,7 @@
             <h1 class="logo">C<span>ode</span>C<span>rafters</span></h1>
             <ul>
                 <li><a href="http://127.0.0.1:8000/static/home.html"> Home </a></li>
-                <li><a href="http://127.0.0.1:8000/static/product.html"> Products </a></li>
+                <li><a href="http://127.0.0.1:8000/static/product.html" class="bg-product"> Products </a></li>
                 <li><a href="http://127.0.0.1:8000/static/people.html"> People </a></li>
                 <li><a href="http://127.0.0.1:8000/static/contact.html"> Contact </a></li>
             </ul>
@@ -160,23 +146,69 @@
                 <button type="submit"> Search </button>
             </form>
         </div>
-        <div class="content">
-            <div class="text">
-                <h2> Software Development Company </h2>
-                <br>
-                <p> Welcome to CodeCrafters, your gateway to cutting-edge software solutions and innovative web development applications! </p>
-                <br>
-                <div>
-                    <a href="#" class="login"> Log In </a>
-                    <a href="#" class="signup"> Sign Up </a>
+        <div class="container">
+            <div class="box-container">
+                <div class="box">
+                    <img src="logo2.png" alt="">
+                    <h3> SiteGenie Builder </h3>
+                    <p> Simplified drag and drop website creation. </p>
+                </div>
+                <div class="box">
+                    <img src="logo3.png" alt="">
+                    <h3> DevSync Hub Pro </h3>
+                    <p> Efficient version control and sync. </p>
+                </div>
+                <div class="box">
+                    <img src="logo4.png" alt="">
+                    <h3> CodeLeap Toolkit </h3>
+                    <p> Tools for innovative web development. </p>
+                </div>
+                <div class="box">
+                    <img src="logo9.png" alt="">
+                    <h3> Comtug Software </h3>
+                    <p> Robust multi-layered website security. </p>
+                </div>
+                <div class="box">
+                    <img src="logo6.png" alt="">
+                    <h3> WebFlow Pro Studio </h3>
+                    <p> Rapid low-code app creation. </p>
+                </div>
+                <div class="box">
+                    <img src="logo10.png" alt="">
+                    <h3> Norton Toolkit </h3>
+                    <p> Automated testing and debugging. </p>
+                </div>
+                <div class="box">
+                    <img src="logo8.png" alt="">
+                    <h3> Teamm Code </h3>
+                    <p> Streamlined code content management. </p>
+                </div>
+                <div class="box">
+                    <img src="logo11.png" alt="">
+                    <h3> WideFix </h3>
+                    <p> Optimized code correcting tools. </p>
+                </div>
+                <div class="box">
+                    <img src="logo12.png" alt="">
+                    <h3> Datatech eSolutions </h3>
+                    <p> Optimized code efficiency tools. </p>
+                </div>
+
+                <div class="box">
+                    <img src="logo13.png" alt="">
+                    <h3> World Soft </h3>
+                    <p> Seamless high-traffic handling. </p>
+                </div>
+                <div class="box">
+                    <img src="logo14.png" alt="">
+                    <h3> MINDTECH </h3>
+                    <p> Integrated tools for developers. </p>
                 </div>
             </div>
-        </div>  
+        </div>
     </div>
     <footer>
         <center> Designed and Developed by Muthulakshmi D (23013566) </center>
     </footer>
 </body>
 </html>
-
-
